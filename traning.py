@@ -6,7 +6,7 @@ from keras import optimizers
 
 
 def train():
-    create_my_sees(0.7)
+    create_my_sees(0.5)
 
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
@@ -18,7 +18,7 @@ def train():
 
     model = keras.Sequential([
         Flatten(input_shape=(28, 28, 1)),
-        Dense(178, activation="relu"),
+        Dense(268, activation="relu"),
         Dense(10, activation="softmax")
     ])
 
